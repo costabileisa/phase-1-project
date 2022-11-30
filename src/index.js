@@ -9,6 +9,9 @@ window.addEventListener('click', () => {
 
 // on keypress, will display only APIs that match that letter
 window.addEventListener('keydown', (event) => {
+    // if key pressed is escape, return to default list
+    if (event.key === "Escape") listAPI(null);
+    console.log(event.key)
     document.getElementById("api-list").innerHTML = "";
     listAPI(event.key);
 })
@@ -27,11 +30,11 @@ function listAPI(input) {
             if (!element.Auth) {
                 // outputs both lowercase and uppercase for the keydown event
                 if (input == null || element.API.charAt(0).toUpperCase() == input.toUpperCase()) {
-                    console.log(element)
+                    //console.log(element)
                     let li = document.createElement("li");
                     // filters the original api object to just the name of the api, the description, and a link
                     const filtered = ["API", "Description", "Link"].reduce((result, key) => { result[key] = element[key]; return result; }, {});
-                    console.log(filtered)
+                    //console.log(filtered)
                     // loops to add info so html can display
                     let info = "";
                     for (let x in filtered) {
