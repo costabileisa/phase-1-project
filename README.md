@@ -1,6 +1,7 @@
 # Phase 1 Project
 
 This is the end of Phase 1 project for Flatiron School.
+Webpage can be found at: https://lalllic.github.io/phase-1-project/
 ## Requirements
 The requirements for this project included the following:
 - Must be written in HTML/CSS/JS that accesses a public API with no auth key
