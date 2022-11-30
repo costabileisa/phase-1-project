@@ -1,6 +1,6 @@
 # Phase 1 Project
 
-This is the end of Phase 1 project for Flatiron School.
+This is the end of Phase 1 project for Flatiron School.   
 Webpage can be found at: https://lalllic.github.io/phase-1-project/
 ## Requirements
 The requirements for this project included the following:
