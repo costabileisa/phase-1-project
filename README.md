@@ -15,6 +15,7 @@ The requirements for this project included the following:
 - It immediately filters out the ones that require an auth key, so it only displays the ones that do not require an auth key
 - The info about the APIs that is displayed has been filtered to only include the name, a short description, and the link
 - On keypress, it will display only the APIs whose first letter matches the key pressed
+- If the key pressed is "Escape" the list will return back to default
 - On click, the background of the page will turn pink (hex color #ffd1dc)
 
 [Public API for Public APIs]: https://api.publicapis.org/
