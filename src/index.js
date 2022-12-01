@@ -1,20 +1,27 @@
-window.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     listAPI();
 })
 
 // on click, background of page will turn pink
-window.addEventListener('click', () => {
+document.addEventListener('click', () => {
     document.body.style.backgroundColor = "#ffd1dc"
 })
 
 // on keypress, will display only APIs that match that letter
-window.addEventListener('keydown', (event) => {
+document.addEventListener('keydown', (event) => {
     // if key pressed is escape, return to default list
     if (event.key === "Escape") listAPI(null);
     console.log(event.key)
     document.getElementById("api-list").innerHTML = "";
     listAPI(event.key);
 })
+
+document.addEventListener('mouseover', (e) => {
+    let api = document.getElementById(e.target.id);
+    if (!api) return;
+    api.style.fontSize = "125%"
+})
+
 
 // lists the APIs
 function listAPI(input) {
@@ -43,7 +50,12 @@ function listAPI(input) {
                     li.innerHTML = info;
 
                     // adds the name of the API as the id to each element
-                    li.id = element.API;
+                    // if the id already exists, adds 1 to the end of it
+                    if (document.getElementById(element.API)) {
+                        li.id = element.API + 1;
+                    } else {
+                        li.id = element.API;
+                    };
 
                     // appends the filtered object to the ul
                     ul.append(li);
