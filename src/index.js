@@ -28,7 +28,7 @@ document.addEventListener("mouseout", (e) => {
 
 // change element style
 function changeStyle(element, fontSize, color) {
-    let api = document.getElementById(element);
+    const api = document.getElementById(element);
     if (!api) return;
     api.style.fontSize = fontSize;
     api.style.color = color;
@@ -47,7 +47,7 @@ function listAPI(input) {
             if (!element.Auth) {
                 // outputs both lowercase and uppercase for the keydown event
                 if (input == null || element.API.charAt(0).toUpperCase() == input.toUpperCase()) {
-                    let li = document.createElement("li");
+                    const li = document.createElement("li");
                     // filters the original api object to just the name of the api, the description, and a link
                     const filtered = ["API", "Description", "Link"].reduce((result, key) => { result[key] = element[key]; return result; }, {});
                     // loops to add info so html can display
