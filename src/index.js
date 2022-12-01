@@ -11,15 +11,24 @@ document.addEventListener('click', () => {
 document.addEventListener('keydown', (event) => {
     // if key pressed is escape, return to default list
     if (event.key === "Escape") listAPI(null);
-    console.log(event.key)
+    //console.log(event.key)
     document.getElementById("api-list").innerHTML = "";
     listAPI(event.key);
 })
 
+// increases font size when mouseover
 document.addEventListener('mouseover', (e) => {
     let api = document.getElementById(e.target.id);
     if (!api) return;
-    api.style.fontSize = "125%"
+    api.style.fontSize = "125%";
+    api.style.color = "magenta";
+})
+// reverts the size back to normal when mouse leaves
+document.addEventListener("mouseout", (e) => {
+    let api = document.getElementById(e.target.id);
+    if (!api) return;
+    api.style.fontSize = "";
+    api.style.color = "";
 })
 
 
