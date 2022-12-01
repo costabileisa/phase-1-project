@@ -14,8 +14,9 @@ The requirements for this project included the following:
 - The page will load a list of public APIs from this [Public API for Public APIs]
 - It immediately filters out the ones that require an auth key, so it only displays the ones that do not require an auth key
 - The info about the APIs that is displayed has been filtered to only include the name, a short description, and the link
+- On hover, it increases the font size and changes the color of the hovered API for better readability; when the mouse leaves, the style returns back to normal
 - On keypress, it will display only the APIs whose first letter matches the key pressed
 - If the key pressed is "Escape" the list will return back to default
-- On click, the background of the page will turn pink (hex color #ffd1dc)
+- On click, the background of the page will turn pink
 
 [Public API for Public APIs]: https://api.publicapis.org/
