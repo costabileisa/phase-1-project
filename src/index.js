@@ -1,4 +1,4 @@
-const style = {"color": "magenta", "fontSize": "125%"}
+const style = { "textColor": "magenta", "fontSize": "125%", "backgroundColor": "#ffd1dc" };
 
 document.addEventListener('DOMContentLoaded', () => {
     listAPI();
@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // on click, background of page will turn pink
 document.addEventListener('click', () => {
-    document.body.style.backgroundColor = "#ffd1dc"
+    document.body.style.backgroundColor = style.backgroundColor;
 })
 
 // on keypress, will display only APIs that match that letter
@@ -19,7 +19,7 @@ document.addEventListener('keydown', (event) => {
 
 // increases font size when mouseover
 document.addEventListener('mouseover', (e) => {
-    changeStyle(e.target.id, style["fontSize"], style["color"])
+    changeStyle(e.target.id, style["fontSize"], style["textColor"])
 })
 // reverts the size back to normal when mouse leaves
 document.addEventListener("mouseout", (e) => {
