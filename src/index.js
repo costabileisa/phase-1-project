@@ -17,19 +17,17 @@ document.addEventListener('keydown', (event) => {
     listAPI(event.key);
 })
 
-// increases font size when mouseover
 document.addEventListener('mouseover', (e) => {
-    changeStyle(e.target.id, style["fontSize"], style["textColor"])
+    changeStyle(e.target.id, style.fontSize, style.textColor)
 })
-// reverts the size back to normal when mouse leaves
 document.addEventListener("mouseout", (e) => {
     changeStyle(e.target.id, "", "")
 })
 
-// change element style
+// change styling (font size & color)
 function changeStyle(element, fontSize, color) {
     const api = document.getElementById(element);
-    if (!api) return;
+    if (!api || api.id === "api-list") return;
     api.style.fontSize = fontSize;
     api.style.color = color;
 }
