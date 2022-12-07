@@ -1,9 +1,11 @@
 # Phase 1 Project
 
-This is the end of Phase 1 project for Flatiron School.   
-For my project, I wanted to do something that I thought may be of use to me later on as well as something that I would be able to build onto in the future. Creating a list of public APIs seemed like a very useful idea to me because it was annoying to try to find the perfect public API for this project in the first place. I also liked the idea of, in the future, being able to add alphabetical organization, dropdown features for more info on the APIs, a search bar, etc.   
-My project is not that complex, but I acheived my goals. I wanted to be able to change the background color to my favorite hex color (#ffd1dc). I also wanted the list to show only the public APIs that did not require an auth key. In order to make it easier to seach through the large list of APIs, I wanted some sort of way to sort or organize/shorten the list, which I achieved by adding the keydown event. Last, to make the wall of text more readable, I was able to add style to the text based on hover which makes the info pop.   
-The main purpose of this project is to provide one place where someone could look for a public API that does not require an auth key rather than having to scour multiple different websites that may only have 10 or so APIs liisted on each site.   
+This is the end of Phase 1 project for Flatiron School.    
+     
+For this project, the primary goals were to create something that would be useful and could be added onto for more practicality later on while still satisfying the project requirements.     
+Creating a list of public APIs was an easy way to acheive these goals. Most websites that list public APIs without an authoriztion key will only list a few different APIs. It can become extremely tedious searching through multiple different websites to try to find the perfect API. This project solves that problem. A large collection of APIs was also a great way to introduce add-ons later for functionality/usability (Alphabetical organization, dropdown features, search bar, etc.).     
+This project, most importantly, satisfies the project requirements set by Flatiron School. On a single page application made from HTML/CSS/JS, it pulls from a public API of public APIs, has at least three event listeners (click, keydown, mouseover, mouseout), and uses array iteration to keep code clean.     
+To make the page interactive, multiple event listers were used. The click event will change the background color pink (hex color: #ffd1dc). When hovering over an API, the style will change to make the font larger and a different color for better readability. When a key is pressed, the page will be updated (without refreshing) to show only the APIs that start with that key.      
 
 ## Requirements
 The requirements for this project included the following:
@@ -23,8 +25,8 @@ The requirements for this project included the following:
 - On click, the background of the page will turn pink
 
 ## Links
-Webpage can be found at: https://costabileisa.github.io/phase-1-project/   
-Video walkthrough can be found at:   
-Blogpost can be found at:   
+Webpage: https://costabileisa.github.io/phase-1-project/   
+Video walkthrough:   
+Blog post:   
 
 [Public API for Public APIs]: https://api.publicapis.org/
