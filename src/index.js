@@ -23,6 +23,7 @@ document.addEventListener("mouseout", (e) => style(e, "remove"))
 function style(event, style) {
     const className = event.target.className.split(" ")[0]
     if (!className) return;
+    if (event.target.nodeName !== "LI") return;
 
     const collection = document.getElementsByClassName(className)
 
