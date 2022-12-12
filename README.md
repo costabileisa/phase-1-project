@@ -27,7 +27,7 @@ The requirements for this project included the following:
 ## Links
 Webpage: https://costabileisa.github.io/phase-1-project/   
 Video walkthrough:   
-Blog post: [First Attempt] [Second Attempt]
+Blog post: [First Attempt], [Second Attempt]
 
 [Public API for Public APIs]: https://api.publicapis.org/
 [First Attempt]: https://costabileisa.medium.com/flexible-thinking-to-accomplish-the-goal-508c336aaa00
