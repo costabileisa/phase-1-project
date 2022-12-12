@@ -39,12 +39,12 @@ function style(event, style) {
 
 }
 
-function listAPI(input) {
+async function listAPI(input) {
     // grabs the ul from index.html that the lis will be added to
     const apiList = document.getElementById('api-list');
 
     // fetches all entries from the api
-    fetch('https://api.publicapis.org/entries')
+    await fetch('https://api.publicapis.org/entries')
     .then(res => res.json())
     .then(data => {
         data.entries.forEach(element => {
