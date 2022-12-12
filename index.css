@@ -10,3 +10,11 @@ body {
 .changeColor {
     background-color: #ffd1dc;
 }
+
+#api-list {
+    list-style-type: none;
+}
+
+#api-list > li {
+    margin-bottom: 10px;
+}

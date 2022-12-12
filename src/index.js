@@ -53,7 +53,6 @@ function listAPI(input) {
                 // outputs both lowercase and uppercase for the keydown event
                 if (input == null || element.API.charAt(0).toUpperCase() == input.toUpperCase()) {
                     const className = element.Description.split(" ").join("-")
-                    let div = document.createElement("div");
                     let ul = document.createElement("ul")
 
                     let apiName = document.createElement("li")
@@ -70,14 +69,13 @@ function listAPI(input) {
                     link.innerHTML = element.Link
                     link.className = className
                     apiLink.className = className
-
                     apiLink.append(link)
 
-                    ul.append(apiName, apiDescription, apiLink)
+                    ul.append(apiDescription, apiLink)
+                    apiName.append(ul)
 
-                    // appends the ul to the div
-                    div.append(ul);
-                    apiList.append(div)
+                    // appends the name to the apiList
+                    apiList.append(apiName)
                 }
             }
         })
