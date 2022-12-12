@@ -44,7 +44,7 @@ async function listAPI(input) {
     const apiList = document.getElementById('api-list');
 
     // fetches all entries from the api
-    await fetch('https://api.publicapis.org/entries')
+    await fetch("https://api.publicapis.org/entries")
     .then(res => res.json())
     .then(data => {
         data.entries.forEach(element => {
