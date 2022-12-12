@@ -26,7 +26,7 @@ The requirements for this project included the following:
 
 ## Links
 Webpage: https://costabileisa.github.io/phase-1-project/   
-Video walkthrough:   
+Video walkthrough: https://youtu.be/qSzOK4uvp_A
 Blog post: [First Attempt], [Second Attempt]
 
 [Public API for Public APIs]: https://api.publicapis.org/
