@@ -1,24 +1,24 @@
 document.addEventListener('DOMContentLoaded', () => {
     listAPI();
-})
 
-// on click, background of page will turn pink
-document.addEventListener('click', () => {
-    document.body.classList.add("changeColor");
-})
+    // on click, background of page will turn pink
+    document.addEventListener('click', () => {
+        document.body.classList.add("changeColor");
+    })
 
-// on keypress, will display only APIs that match that letter
-document.addEventListener('keydown', (event) => {
-    // reset the list
-    document.getElementById("api-list").innerHTML = "";
-    // if key pressed is escape, return to default list
-    if (event.key === "Escape") return listAPI(null);
+    // on keypress, will display only APIs that match that letter
+    document.addEventListener('keydown', (event) => {
+        // reset the list
+        document.getElementById("api-list").innerHTML = "";
+        // if key pressed is escape, return to default list
+        if (event.key === "Escape") return listAPI(null);
     
-    listAPI(event.key);
-})
+        listAPI(event.key);
+    })
 
-document.addEventListener('mouseover', (e) => style(e, "add"))
-document.addEventListener("mouseout", (e) => style(e, "remove"))
+    document.addEventListener('mouseover', (e) => style(e, "add"))
+    document.addEventListener("mouseout", (e) => style(e, "remove"))
+})
 
 function style(event, style) {
     const className = event.target.className.split(" ")[0]
