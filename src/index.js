@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // addComment()
 })
 
+// part of my live coding review
 // function addComment() {
 //     const form = document.getElementById("comment-form");
 
@@ -90,14 +91,16 @@ async function listAPI(input) {
 }
 
 function search() {
+    // grab the form
     const form = document.getElementById("search-box")
-    form.addEventListener("keyup", event => {
+    form.addEventListener("keyup", () => {
+        // get the search box's value
         const searchContent = document.getElementById("search").value
 
+        // reset the api-list
         document.getElementById("api-list").innerHTML = "";
 
-        if (event.key === "Escape") return listAPI(null);
-
+        // list the apis that match the search
         listAPI(searchContent)
     })
 }
